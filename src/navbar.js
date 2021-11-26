@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 const NavBar = () => (
   <nav>
     <ul>
-      <li>
+      <li key="0">
         <Link to="/">Home</Link>
       </li>
-      <li>
+      <li key="1">
         <Link to="/about">About</Link>
       </li>
-      <li>
+      <li key="2">
         <Link to="/articlelist">Articles</Link>
       </li>
     </ul>
