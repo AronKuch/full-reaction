@@ -4,6 +4,8 @@ import ReactHtmlParser from "react-html-parser";
 import content from "./content.js";
 import ListComponent from "../components/listcomponent.js";
 import CommentsList from "../components/commentslist.js";
+import UpvotesSection from "../components/upvotesection.js";
+import AddCommentForm from "../components/addcommentform.js";
 import NotFoundPage from "./notfound.js";
 
 const ArticlePage = ({ match }) => {
@@ -28,8 +30,13 @@ const ArticlePage = ({ match }) => {
   return (
     <>
       <h1>{articleInfo.title}</h1>
-      <p>This post has {articleInfo.upvotes} upvotes</p>
+      <UpvotesSection
+        articleName={name}
+        upvotes={articleInfo.upvotes}
+        setArticleInfo={setArticleInfo}
+      />
       {ReactHtmlParser(articleInfo.content)}
+      <AddCommentForm articleName={name} setArticleInfo={setArticleInfo} />
       <CommentsList comments={articleInfo.comments} />
       <h2>Other Article</h2>
       <ListComponent articles={otherArticles} />
