@@ -1,3 +1,12 @@
+/* Color Palette
+https://coolors.co/303030-f5f5f5-d2d7df-bdbbb0-0077b8
+Jet: #303030, a charcoal grey
+Cultured: #F5F5F5, slightly off white
+Light Grey: #D2D7DF, with a bluish tint
+Pale Silver: #BDBBB0, slightly lighter than regular grey
+Star Command Blue: #0077B8, slightly lighter than regular blue
+*/
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -12,6 +21,33 @@ code {
     monospace;
 }
 
+/* Aron's new CSS is below this */
+
 img {
   height: 40px;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #303030;
+}
+
+nav {
+  background-color: #d2d7df;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:focus,
+nav a:hover {
+  outline-width: 1px;
+  outline-color: #303030;
+  background-color: #f5f5f5;
+}
+
+nav ul {
+  list-style-type: none;
 }
