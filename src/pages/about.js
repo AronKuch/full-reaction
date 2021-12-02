@@ -15,6 +15,11 @@ const AboutPage = () => (
     <h2>Heather</h2>
     <h2>Primerica</h2>
     <h2>Return to Campus</h2>
+    <h2>Learning More</h2>
+    <p>
+      A place to talk about preparing for grad school, taking courses and
+      working on the app.
+    </p>
     <h2>Caretaking</h2>
   </>
 );
