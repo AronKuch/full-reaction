@@ -23,11 +23,11 @@ const Pictures = () => {
 
 const ResumePage = () => {
   return (
-    <>
+    <div className="content-width">
       <h1>Resume</h1>
       <p>I have worked in these softwares.</p>
       <Pictures />
-    </>
+    </div>
   );
 };
 

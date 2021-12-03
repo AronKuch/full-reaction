@@ -28,7 +28,7 @@ const ArticlePage = ({ match }) => {
   if (!article) return <NotFoundPage />;
 
   return (
-    <>
+    <div className="content-width">
       <h1>{articleInfo.title}</h1>
       <UpvotesSection
         articleName={name}
@@ -40,7 +40,7 @@ const ArticlePage = ({ match }) => {
       <CommentsList comments={articleInfo.comments} />
       <h2>Other Article</h2>
       <ListComponent articles={otherArticles} />
-    </>
+    </div>
   );
 };
 

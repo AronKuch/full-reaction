@@ -1,7 +1,7 @@
 import React from "react";
 
 const AboutPage = () => (
-  <>
+  <div className="content-width">
     <h1>Who is Aron Kuch?</h1>
     <p>
       This will have content about me. With it you can better understand who I
@@ -21,7 +21,7 @@ const AboutPage = () => (
       working on the app.
     </p>
     <h2>Caretaking</h2>
-  </>
+  </div>
 );
 
 export default AboutPage;
