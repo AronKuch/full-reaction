@@ -24,9 +24,16 @@ const Pictures = () => {
 const ResumePage = () => {
   return (
     <div className="content-width">
-      <h1>Resume</h1>
+      <h1>Aron Kuch</h1>
+      <p>A description of who I am, professionally.</p>
+      <h2>Experience</h2>
       <p>I have worked in these softwares.</p>
       <Pictures />
+      <h2>Education</h2>
+      <h3>Bachelor's of Arts: Biology</h3>
+      <h3>Business courses</h3>
+      <h3>Computer Science courses</h3>
+      <h3>LinkedIn Learning</h3>
     </div>
   );
 };
