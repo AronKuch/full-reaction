@@ -91,3 +91,13 @@ nav a:hover {
 nav ul {
   list-style-type: none;
 }
+
+/* Grid layout on resume.js */
+.grid-container {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-column-gap: 50px;
+}
+
+.grid-item {
+}

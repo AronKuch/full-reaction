@@ -21,19 +21,26 @@ const Pictures = () => {
   );
 };
 
+// I should do each sectoin as a component, save the data in a JSON file and map through the JSON.
 const ResumePage = () => {
   return (
     <div className="content-width">
       <h1>Aron Kuch</h1>
       <p>A description of who I am, professionally.</p>
-      <h2>Experience</h2>
-      <p>I have worked in these softwares.</p>
-      <Pictures />
-      <h2>Education</h2>
-      <h3>Bachelor's of Arts: Biology</h3>
-      <h3>Business courses</h3>
-      <h3>Computer Science courses</h3>
-      <h3>LinkedIn Learning</h3>
+      <div className="grid-container">
+        <div className="grid-item">
+          <h2>Experience</h2>
+          <p>I have worked in these softwares.</p>
+          <Pictures />
+        </div>
+        <div className="grid-item">
+          <h2>Education</h2>
+          <h3>Bachelor's of Arts: Biology</h3>
+          <h3>Business courses</h3>
+          <h3>Computer Science courses</h3>
+          <h3>LinkedIn Learning</h3>
+        </div>
+      </div>
     </div>
   );
 };
